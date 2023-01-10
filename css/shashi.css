@@ -1,0 +1,93 @@
+div{
+    /* background-color: rgb(101, 130, 130) ; */
+    /* background-size: 500px; */
+    border-radius: 13px;
+    /* border: 2px solid red; */
+    /* width:700px */
+}
+}
+.container{
+    display: grid;
+    
+}
+.input{
+    padding: 2px 2px 2px;
+    margin: 2px 2px ;
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+
+h3{
+    color: pink;
+    background: rgb(116, 89, 223);
+}
+p{
+    color: gold;
+    background: rgb(137, 176, 137);
+    width: 500px;
+}
+.heading{
+    color: blue;
+}
+table{
+    color: red;
+}
+a{
+    color: brown;
+}
+.h1{
+    color:yellow;
+}
+footer, span{
+    background-color: cyan;
+    color: blue;
+    font-family: cursive;
+    width: 500px;
+}
+.navbar{
+    background-color: #3405eeef;
+
+}
+.navbar ul{
+    overflow: auto;
+
+
+}
+.navbar li{
+    float:left;
+    list-style: none;
+    margin: 10px 15px;
+}
+.navbar li a{
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    margin: 2px;
+    /* border-radius: 5px; */
+
+}
+.navbar li a:hover{
+  
+    color: rgb(135, 236, 12);
+  
+
+}
+
+.container1{
+    display: grid;
+    /* grid-template-columns: 300px 100px 100px;   */
+    /* grid-template-columns: 100px auto 100px;  */
+    /* grid-template-columns: 1fr 4fr 1fr; */
+    grid-template-columns: repeat(3, auto);
+    
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    padding: 15px;
+    margin: 5px 2px;
+
+}

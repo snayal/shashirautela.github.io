@@ -1,0 +1,177 @@
+
+body{
+    background-color: red;
+}
+
+.center{
+    text-align: center;
+}
+/* Navitation */
+#navbar{
+    flex-direction: column;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    /* padding: 1px 200px; */
+    justify-content: center;
+    align-items: center;
+    height: 315px;
+}
+
+#home h1 {
+    color: white;
+    /* padding-top: -42px; */
+    text-align: center;
+    font-family: 'Berkshire Swash';
+}
+
+#home p {
+        color: whitesmoke;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    /* Servicce Section */
+
+#services{
+    flex-direction: column;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 3px;
+    padding: 17px;
+    border-radius: 30px;
+    background-color: rgb(242, 233, 233);
+}
+#services .box img {
+    height: 162px;
+    margin: auto;
+    display: block;
+}
+#services .box p {
+    font-family: 'Abel';
+    /* font-family: 'Berkshire Swash'; */
+}
+
+/* Client Section*/
+
+#client-section {
+    align-items: center;
+    height: 475px;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    display: flex;
+}
+
+#client-section::before {
+    content: "";
+    background: url(../images/lightGray-bg.jpg) repeat-y center center/cover;
+    position: absolute;
+    height: 74%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.51;
+}
+#clients{
+    flex-wrap: wrap;
+    flex-direction: coloum;
+}
+
+#clients img {
+    height: 107px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.client-item{
+    padding: 5px;
+
+}
+
+/* Contact Section */
+
+
+#contact{
+    position: relative;
+    /* display: flex; */
+    /* height: 600px; */
+    
+}
+#contact::before{
+    /* display: flex; */
+    position:absolute;
+    content:"";
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity:.1;
+    background: url('../images/backg2.jpg') no-repeat center center/cover;
+
+}
+#contact-box label{
+        font-family: 'Berkshire Swash';
+        font-size: 1.1rem;
+    }
+
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 18px;
+}
+#contact-box form{
+    width:53%;
+
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+
+/* utility class */
+
+.h1-primary{
+    font-size: 1.8rem;
+    padding: 8px;
+    /* text-align:center; */
+    /* background-color: azure; */   
+}
+.h2-secondary{
+    font-size: 1.5rem;
+    padding: 7px;
+    text-align: center;
+    font-family: 'Edu QLD Beginner', cursive;
+    /* background-color: azure; */   
+}
+.btn{
+    padding: 3px 20px;
+    border: 2px solid white;
+    background-color: rgb(225, 135, 16);
+    color: white;
+    margin: 27px 10px 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+   
+/*Footer */
+footer {
+    background: black;
+    color: white;
+    height: 22px;
+    align-items: baseline;
+    text-align: justify;
+    padding: 1px 2px;
+}

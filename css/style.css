@@ -1,0 +1,259 @@
+/* CSS Reset */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: :smooth;
+}
+
+
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar */
+
+
+/* Nvigation Bar: Logo and images */
+#logo{
+    margin: 12px 30px;
+}
+#logo img{
+    height: 100px;
+    width: 100px;
+    margin: 3px 3px;
+}
+
+/* Navigation Bar: List styling */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left:0px;
+   
+}
+
+
+#navbar::before{
+    content:"";
+    background-color:black; 
+    position: absolute;
+    height:100%;
+    width: 100%;
+    /* top: 0px; */
+    left:0px;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+#navbar ul{
+    display:flex;
+    list-style:none;
+}
+#navbar ul{
+    display:flex;
+}
+
+#navbar ul li a{
+    color:white;
+    /* list-style:none; */
+    font-size: 1.2em;
+    display:block;
+    padding: 3px 12px;
+    border-radius: 20px; 
+    text-decoration: none;
+    
+}
+#navbar ul li a:hover{
+    color:black;
+    /* list-style:none; */
+    /* list-style:none; */
+    /* font-size: 1.5em; */
+    background-color: white;
+    
+}
+/* Home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 1px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 347px;
+}
+
+#home::before{
+    content:"";
+    background: url('../images/foodpre.jpg') no-repeat  center center/cover; 
+    position:absolute;
+    height: 375px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.91;
+}
+
+#home h1{
+    color:white;
+    padding-top:100px;
+    text-align: center;
+    font-family: 'Berkshire Swash';
+}
+
+
+#home p{
+    color:whitesmoke;
+    font-size: 1.2em;
+    text-align:center;
+}
+
+/* Services section */
+
+#services{
+    margin: 10px;
+    display: flex;
+
+}
+
+
+#services .box{
+    border: 2px solid brown;
+    margin: 9px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgb(242, 233, 233);
+}
+
+#services .box img{
+    height: 270px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+     font-family: 'Abel'; 
+    /* font-family: 'Berkshire Swash'; */
+}
+
+/* Client Section */
+
+#client-section{
+  /* align-items: center; */
+    height: 300px;
+    /* border: 1px solid black; */
+}
+#client-section::before{
+    content:"";
+    background: url('../images/lightGray-bg.jpg') repeat-y  center center/cover; 
+    position:absolute;
+    height: 35%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.51;
+
+  }
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:180px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.client-item{
+    padding: 10px;
+
+}
+
+/* Contact Section */
+
+
+#contact{
+    position: relative;
+    /* display: flex; */
+    height: 600px;
+    
+}
+#contact::before{
+    /* display: flex; */
+    position:absolute;
+    content:"";
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity:.1;
+    background: url('../images/backg2.jpg') no-repeat center center/cover;
+
+}
+#contact-box label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#contact-box form{
+    width:30%;
+
+}
+/* utility class */
+
+.h1-primary{
+    font-size: 3.9rem;
+    padding: 20px;
+    /* text-align:center; */
+    /* background-color: azure; */   
+}
+.h2-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Edu QLD Beginner', cursive;
+    /* background-color: azure; */   
+}
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color:rgb(225, 135, 16);
+    color:white;
+    margin: 38px 10px 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+   
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    height:22px;
+    align-items:baseline;
+    text-align:justify;
+    padding: 3px 20px;
+}
+.center{
+    text-align: center;
+}
